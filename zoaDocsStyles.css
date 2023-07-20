@@ -1,0 +1,167 @@
+.mainPageTitle{
+    color: crimson;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.categorySection{
+    border: 2px solid green;
+}
+
+.categorySection h2{
+    color: rgb(198, 198, 198);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.articleGallery{
+    border: 1px dashed blue;
+    display: grid;
+}
+
+.articleGallery_OneStream{
+    border: 1px dashed blue;
+        display: grid;
+}
+
+.docArticle h2{
+    color: chocolate;
+}
+
+.docArticle h3{
+    color: orange;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    
+}
+
+.docArticle p{
+    color: bisque;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.docArticle ul{
+    color: bisque;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.zoadocsNavCont{
+    border: 1px solid blue;
+    color: bisque;
+    text-align: center;
+
+}
+
+.zoadocsNavCont h5{
+    border: 2px dashed red;
+    width:max-content;
+    display: block;
+    margin: auto;
+    margin-top: 0.5%;
+    margin-bottom: 0%;
+    padding: 4px;
+}
+
+.zoadocs_navbar{
+    border: 2px dashed red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(80, 3, 3);
+    
+}
+
+.zoadocs_navbar a{
+    border: 2px dashed orange;
+    background-color: brown;
+    
+    color: bisque;
+    margin: 5px;
+    padding: 3px;
+    
+   
+}
+
+
+
+
+/*desktop query*/
+@media only screen and (min-width: 600px){
+
+    .articleGallery {
+        border: 1px dashed blue;
+        grid-template-columns: 50% 50%;
+    }
+
+        .articleGallery_OneStream {
+            border: 1px dashed blue;
+            grid-template-columns: 100%;
+        }
+
+    .docArticle{
+        border: 2px solid grey;
+        margin: 0.5vw;
+    }
+
+    .docArticle_imageGallery{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .docArticle_imageCont{
+        border: 1px solid orange;
+        overflow: hidden;
+        margin: 0.5vw;
+    }
+
+    .docArticle_imageCont img{
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+}
+
+
+
+
+
+/*Mobile query*/
+@media only screen and (max-width: 600px){
+    .articleGallery {
+        border: 1px dashed orange;
+        grid-template-columns: 100%;
+    }
+
+         .articleGallery_OneStream {
+             border: 1px dashed blue;
+             grid-template-columns: 100%;
+         }
+
+    .docArticle {
+        border: 2px solid grey;
+    }
+    
+    .docArticle_imageGallery {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .docArticle_imageCont {
+        border: 1px solid red;
+        width: 50%;
+        overflow: hidden;
+    }
+
+    .docArticle_imageCont img{
+        width: 100%;
+    }
+
+}
